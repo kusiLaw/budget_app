@@ -1,0 +1,16 @@
+<nav class='flex'> 
+    <div>
+      <%= link_to image_tag("arrow-left.svg", class:'arrow'),  class: "arrow" %>  
+    </div>
+    <header>
+       <h1> <%= name %></h1>
+    </header>
+    <%if user_signed_in? %>
+      <div class='profile flex'>
+         <%= button_to "Sign Out", destroy_user_session_path, method: :delete , class: "link" %>
+      </div>
+    <%else%>
+       <div class='profile flex'>
+       </div>
+    <%end%>
+</nav>

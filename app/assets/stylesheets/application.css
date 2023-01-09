@@ -13,3 +13,112 @@
  *= require_tree .
  *= require_self
  */
+
+ *,
+ *::before,
+ *::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ html {
+   font-size: 62.5%;
+ }
+ 
+ body {
+   font-family: Lato, Helvetica, sans-serif;
+   min-width: 32rem;
+   font-size: 1.6rem;
+   background-color: #f5f6f8;
+ }
+ 
+ .flex,
+ .c-flex {
+   display: flex;
+ }
+ 
+ .c-flex {
+   flex-direction: column;
+ }
+ 
+ .flex-center{
+  justify-items: center;
+ }
+ .c-flex-center{
+  align-items: center;
+ }
+
+ .container {
+  background-color: #f5f6f8;
+ }
+ 
+
+ nav {
+  background-color: #3778c2;
+  color: white;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 4rem;
+  flex: 1, 1, 33.3%;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .arrow{
+   color: white;
+   width: 3rem;
+ }
+
+
+ .user-form-wrapper{
+  width: 100%;
+  padding: 1rem;
+ }
+
+ .user-form-wrapper input{
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  border: none;
+ }
+
+ .user-form-wrapper a{
+   text-decoration: none;
+   display: block;
+   width: 100%;
+   padding: 1rem;
+   text-align: center;
+ }
+
+ .signin,
+ .signup{
+   font-size: 2rem;
+   color: white;
+ }
+
+ .signup{
+  background-color: #5fb523;
+ 
+ }
+
+ .signin{
+  background-color: #3778c2;
+  margin-bottom: 2rem;
+}
+
+
+
+ @media screen and (min-width: 768px) {
+  .user-form-wrapper{
+   width: 70%;
+  }
+ }
+
+ @media screen and (min-width: 992px) {
+  .user-form-wrapper{
+   width: 50%;
+  }
+ }
