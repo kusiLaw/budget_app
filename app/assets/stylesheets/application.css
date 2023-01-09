@@ -60,6 +60,7 @@
   font-size: 1.5rem;
   width: 100%;
   padding: 1.5rem;
+  height: 10vh;
   margin-bottom: 4rem;
   flex: 1, 1, 33.3%;
   justify-content: space-between;
@@ -97,6 +98,7 @@
  .signup{
    font-size: 2rem;
    color: white;
+   text-transform: uppercase;
  }
 
  .signup{
@@ -109,7 +111,14 @@
   margin-bottom: 2rem;
 }
 
-
+.title{
+ /* padding: 5rem 0rem; */
+ font-size: 2.5rem;
+ color: #3778c2;
+ align-items: center;
+ justify-content: center;
+ height: 50vh;
+}
 
  @media screen and (min-width: 768px) {
   .user-form-wrapper{

@@ -1,4 +1,4 @@
-<%= render 'share/nav', name: 'Change Password'%>
+<%= render 'share/nav', name: 'Change Password',  home: false %>
 <h2>Change your password</h2>
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>

@@ -1,6 +1,8 @@
 <nav class='flex'> 
     <div>
+     <% unless home %>
       <%= link_to image_tag("arrow-left.svg", class:'arrow'),  class: "arrow" %>  
+     <% end%>
     </div>
     <header>
        <h1> <%= name %></h1>

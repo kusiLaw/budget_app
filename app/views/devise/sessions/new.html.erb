@@ -1,4 +1,4 @@
-<%= render 'share/nav', name: 'Login'%>
+<%= render 'share/nav', name: 'Login', home: false%>
 <div class= "user-form-wrapper">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
