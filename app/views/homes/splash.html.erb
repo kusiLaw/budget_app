@@ -11,7 +11,7 @@
         <%= link_to 'LOG IN', user_session_path, class: 'signin' %>
         <%= link_to 'SIGN UP', new_user_registration_path , class: 'signup' %>
      <%else%>
-        <%= link_to 'VIEW CATEGORIES', new_user_registration_path, class: 'signin' %>
+        <%= link_to 'VIEW CATEGORIES', categories_path, class: 'signin' %>
      <%end%>
     </div>
 </div>

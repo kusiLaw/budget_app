@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
  def show
-   redirect_to root_path
+   redirect_to categories_path
  end
 end
