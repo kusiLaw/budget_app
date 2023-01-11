@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_10_165923) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_11_131931) do
   create_table "categories", force: :cascade do |t|
     t.string "name"
     t.string "icon"
@@ -20,13 +20,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_10_165923) do
     t.index ["author_id"], name: "index_categories_on_author_id"
   end
 
-  create_table "category_expenses", force: :cascade do |t|
+  create_table "categories_expenses", force: :cascade do |t|
     t.integer "category_id", null: false
     t.integer "expense_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["category_id"], name: "index_category_expenses_on_category_id"
-    t.index ["expense_id"], name: "index_category_expenses_on_expense_id"
+    t.index ["category_id"], name: "index_categories_expenses_on_category_id"
+    t.index ["expense_id"], name: "index_categories_expenses_on_expense_id"
   end
 
   create_table "expenses", force: :cascade do |t|
@@ -52,7 +52,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_10_165923) do
   end
 
   add_foreign_key "categories", "users", column: "author_id"
-  add_foreign_key "category_expenses", "categories"
-  add_foreign_key "category_expenses", "expenses"
+  add_foreign_key "categories_expenses", "categories"
+  add_foreign_key "categories_expenses", "expenses"
   add_foreign_key "expenses", "users", column: "author_id"
 end

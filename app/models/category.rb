@@ -4,8 +4,8 @@ class Category < ApplicationRecord
  validates :icon, presence: true
 
  belongs_to :user,  foreign_key: 'author_id'
- has_many :category_expenses, foreign_key: 'category_id', dependent: :destroy
- has_many :expenses, through: :category_expenses
+ has_and_belongs_to_many :expenses
+ 
 
  ICONS = %i[alarm calls database droplet energy fare fire food fuel health
              mic-fill mortarboard rent tools personal container ].freeze
