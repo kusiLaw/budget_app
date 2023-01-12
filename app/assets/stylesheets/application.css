@@ -242,6 +242,7 @@ input[type="radio"]:checked + label {
   font-size: 1.3rem;
 }
 
+.category_wrapper,
 .add-cat-wrapper{
  width: 100%;
  padding-top: 3rem;
@@ -256,6 +257,89 @@ input[type="radio"]:checked + label {
 
 }
 
+/* .bline{
+ border-bottom: 3px rgb(99, 93, 93);
+ margin-bottom: 3rem;
+} */
+
+.category_wrapper{
+ padding: 2rem 2rem;
+ 
+}
+
+.trans_details_summary{
+  justify-content: space-between;
+  width: 30%;
+}
+
+.trans_details_summary p{
+ font-size: 1.8rem;
+ font-weight: 600;
+ align-self: flex-end;
+}
+
+.trans-btn{
+ justify-content: space-evenly;
+}
+
+.button-link{
+ border: none;
+  padding: 0.2rem;
+  text-decoration: none;
+  align-content: center;
+  text-align: center;
+  background-color: inherit;
+  display: inline;
+  color: blue;
+  cursor: pointer;
+}
+
+.del:hover{
+ color: red;
+}
+
+.transactions_wrapper {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  padding-top: 2rem;
+  width: 100%;
+  border-top: 1px solid gray;
+}
+
+.transaction_list{
+ padding: 2rem 1.5rem;
+ justify-content: space-between;
+ box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.trans-name_date{
+  gap: 2rem;
+}
+.trans-name_date p:first-child{
+ font-weight: 500;
+ font-size: 2rem;
+ text-transform: capitalize;
+}
+
+.individual_expenses_btn{
+  gap: 2rem;
+  align-items: flex-end;
+}
+
+.new_trans{
+ width: 100%;
+}
+
+
+.link_btn_big{
+  width: 100%;
+  padding: 1.5rem;
+  color:white;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-align: center;
+
+}
  @media screen and (min-width: 768px) {
   .cat-box-wrap,
   .user-form-wrapper{
