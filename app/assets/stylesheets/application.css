@@ -14,247 +14,243 @@
  *= require_self
  */
 
- *,
- *::before,
- *::after {
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
- }
- 
- html {
-   font-size: 62.5%;
- }
- 
- body {
-   font-family: Lato, Helvetica, sans-serif;
-   min-width: 32rem;
-   font-size: 1.6rem;
-   background-color: #f5f6f8;
- }
- 
- .flex,
- .c-flex {
-   display: flex;
- }
- 
- .c-flex {
-   flex-direction: column;
- }
- 
- .flex-center{
-  justify-items: center;
- }
- .c-flex-center{
-  align-items: center;
- }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
- .container {
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Lato, Helvetica, sans-serif;
+  min-width: 32rem;
+  font-size: 1.6rem;
   background-color: #f5f6f8;
- }
- 
+}
 
- nav {
+.flex,
+.c-flex {
+  display: flex;
+}
+
+.c-flex {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-items: center;
+}
+
+.c-flex-center {
+  align-items: center;
+}
+
+.container {
+  background-color: #f5f6f8;
+}
+
+nav {
   background-color: #3778c2;
   color: white;
   font-size: 1.5rem;
   width: 100%;
   padding: 1.5rem;
   height: 10vh;
+
   /* margin-bottom: 4rem; */
-  flex: 1, 1, 33.3%;
+
+  /* flex: 1, 1, 33.3%; */
   justify-content: space-between;
   align-items: center;
- }
+}
 
- .arrow{
-   color: white;
-   width: 3rem;
- }
+.arrow {
+  color: white;
+  width: 3rem;
+}
 
-
- .user-form-wrapper,
- .cat-box-wrap{
+.user-form-wrapper,
+.cat-box-wrap {
   width: 100%;
   padding: 1rem;
- }
+}
 
-
- .user-form-wrapper input{
+.user-form-wrapper input {
   width: 100%;
   margin-top: 4rem;
   padding: 1rem;
   margin-bottom: 2.5rem;
   font-size: 1.8rem;
   border: none;
- }
+}
 
- .cat-box-wrap input{
-  margin-bottom: 0rem;
+.cat-box-wrap input {
+  margin-bottom: 0;
   margin-top: 4rem;
-  padding: 0rem;
- }
+  padding: 0;
+}
 
+.user-form-wrapper a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
 
- .user-form-wrapper a{
-   text-decoration: none;
-   display: block;
-   width: 100%;
-   padding: 1rem;
-   text-align: center;
- }
+.btn-blue,
+.signin,
+.signup {
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+}
 
- .btn-blue,
- .signin,
- .signup{
-   font-size: 2rem;
-   color: white;
-   text-transform: uppercase;
- }
-
- .signup{
+.signup {
   background-color: #5fb523;
- 
- }
+}
 
- .btn-blue,
- .signin{
+.btn-blue,
+.signin {
   background-color: #3778c2;
   margin-bottom: 2rem;
 }
 
-.title{
- font-size: 2.5rem;
- color: #3778c2;
- align-items: center;
- justify-content: center;
- height: 50vh;
+.title {
+  font-size: 2.5rem;
+  color: #3778c2;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
 }
 
-
-.radio_text{
+.radio_text {
   align-self: flex-start;
 }
 
-.check-box-wrapper{
- justify-content: center;
- align-items: center;
- padding: 1rem;
+.check-box-wrapper {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .check-boxes {
   display: flex;
- justify-content: space-between;
- flex-wrap: wrap;
- gap: 0.8rem;
-
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }
 
 .check-boxes label {
- width: 65px;
- height: 65px;
- border: 1px solid #7095be;
- border-radius: 5px;
- position: relative;
- display: flex;
- justify-content: center;
- align-items: center;
+  width: 65px;
+  height: 65px;
+  border: 1px solid #7095be;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-input[type="radio"]{
- appearance: none;
+input[type="radio"] {
+  appearance: none;
 }
 
 input[type="radio"]:hover + label {
- cursor: pointer;
- background:  #3778c2;
- scale: 1.2;
+  cursor: pointer;
+  background: #3778c2;
+  scale: 1.2;
 }
 
 input[type="radio"]:checked + label {
- background: rgba(55, 120, 194, 0.5);
-} 
-
-.link-gray{
- color: gray;
+  background: rgba(55, 120, 194, 0.5);
 }
 
-.total-buget{
- width: 100%;
- margin-bottom: 1rem;
+.link-gray {
+  color: gray;
+}
+
+.total-buget {
+  width: 100%;
+  margin-bottom: 1rem;
   padding: 2rem;
   justify-content: space-between;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0 3px 5px;
 }
 
-.category-wrapper{
- width: 100%;
- padding: 2rem;
+.category-wrapper {
+  width: 100%;
+  padding: 2rem;
 }
 
-.categories{
- gap: 2rem;
+.categories {
+  gap: 2rem;
 }
-.individual-cat{
+
+.individual-cat {
   background-color: white;
   padding: 1rem;
   margin-bottom: 2rem;
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
 }
 
-
-.cat-link{
+.cat-link {
   align-items: center;
- color: black;
- text-decoration: none;
- width: 100%;
+  color: black;
+  text-decoration: none;
+  width: 100%;
 }
 
-.text-with-icon{
- width: 80%;
- align-items: center;
- height: auto;
- gap: 7% ;
-}
-.cat-img{
- padding: 0.5rem;
+.text-with-icon {
+  width: 80%;
+  align-items: center;
+  height: auto;
+  gap: 7%;
 }
 
-.cat-icon{
- height: 5rem;
- align-content: center;
-}
-.cat-name{
- gap: 2rem;
-
-
+.cat-img {
+  padding: 0.5rem;
 }
 
-.cat-title{
- text-transform: capitalize;
- font-size: 2rem;
- font-weight: 600;
+.cat-icon {
+  height: 5rem;
+  align-content: center;
 }
-.cat_date{
-/* align-content: center; */
+
+.cat-name {
+  gap: 2rem;
+}
+
+.cat-title {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cat_date {
+  /* align-content: center; */
   font-size: 1.3rem;
 }
 
 .category_wrapper,
-.add-cat-wrapper{
- width: 100%;
- padding-top: 3rem;
+.add-cat-wrapper {
+  width: 100%;
+  padding-top: 3rem;
 }
 
-.add-cat{
- text-align: center;
- width: 100%;
- font-size: 1.8rem;
- padding: 1.5rem;
- text-decoration: none;
-
+.add-cat {
+  text-align: center;
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  text-decoration: none;
 }
 
 /* .bline{
@@ -262,28 +258,27 @@ input[type="radio"]:checked + label {
  margin-bottom: 3rem;
 } */
 
-.category_wrapper{
- padding: 2rem 2rem;
- 
+.category_wrapper {
+  padding: 2rem 2rem;
 }
 
-.trans_details_summary{
+.trans_details_summary {
   justify-content: space-between;
   width: 30%;
 }
 
-.trans_details_summary p{
- font-size: 1.8rem;
- font-weight: 600;
- align-self: flex-end;
+.trans_details_summary p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  align-self: flex-end;
 }
 
-.trans-btn{
- justify-content: space-evenly;
+.trans-btn {
+  justify-content: space-evenly;
 }
 
-.button-link{
- border: none;
+.button-link {
+  border: none;
   padding: 0.2rem;
   text-decoration: none;
   align-content: center;
@@ -294,8 +289,8 @@ input[type="radio"]:checked + label {
   cursor: pointer;
 }
 
-.del:hover{
- color: red;
+.del:hover {
+  color: red;
 }
 
 .transactions_wrapper {
@@ -306,53 +301,58 @@ input[type="radio"]:checked + label {
   border-top: 1px solid gray;
 }
 
-.transaction_list{
- padding: 2rem 1.5rem;
- justify-content: space-between;
- box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+.transaction_list {
+  padding: 2rem 1.5rem;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 1px;
 }
 
-.trans-name_date{
+.trans-name_date {
   gap: 2rem;
 }
-.trans-name_date p:first-child{
- font-weight: 500;
- font-size: 2rem;
- text-transform: capitalize;
+
+.trans-name_date p:first-child {
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: capitalize;
 }
 
-.individual_expenses_btn{
+.individual_expenses_btn {
   gap: 2rem;
   align-items: flex-end;
 }
 
-.new_trans{
- width: 100%;
+.new_trans {
+  width: 100%;
 }
 
-
-.link_btn_big{
+.link_btn_big {
   width: 100%;
   padding: 1.5rem;
-  color:white;
+  color: white;
   font-size: 1.6rem;
   text-decoration: none;
   text-align: center;
-
 }
 
-.select-input{
- font-size: larger;
+.select-input {
+  font-size: larger;
 }
- @media screen and (min-width: 768px) {
+
+#logout {
+  background-color: inherit;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
   .cat-box-wrap,
-  .user-form-wrapper{
-   width: 70%;
+  .user-form-wrapper {
+    width: 70%;
   }
- }
+}
 
- @media screen and (min-width: 992px) {
-  .user-form-wrapper{
-   width: 50%;
+@media screen and (min-width: 992px) {
+  .user-form-wrapper {
+    width: 50%;
   }
- }
+}

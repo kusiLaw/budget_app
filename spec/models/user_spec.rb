@@ -7,9 +7,9 @@ RSpec.describe User, type: :model do
 
   context 'Sign Up:' do
     it 'User has no valid emai' do
-     @user.email = 'pet'
-     @user.save
-     expect(@user).to_not be_valid
+      @user.email = 'pet'
+      @user.save
+      expect(@user).to_not be_valid
     end
 
     it 'User with valid attribute' do
@@ -18,14 +18,13 @@ RSpec.describe User, type: :model do
 
     it 'User password less than the lenght' do
       @user.password = 'laky'
-    
+
       expect(@user).to_not be_valid
     end
 
     it 'User name should match input' do
-     @user.save
-     expect(@user.name).to eql 'Peter'
-   end
+      @user.save
+      expect(@user.name).to eql 'Peter'
+    end
   end
-
 end

@@ -9,7 +9,9 @@
     </header>
     <%if user_signed_in? %>
       <div class='profile flex'>
-         <%= button_to "Sign Out", destroy_user_session_path, method: :delete , class: "link" %>
+         <%#= button_to "Sign Out", destroy_user_session_path, method: :delete , class: "link" , id:'logout' %>
+         <%= button_to image_tag('logout.svg', alt:'logout'), destroy_user_session_path, method: :delete , class: "link" , id:'logout' %>
+
       </div>
     <%else%>
        <div class='profile flex'>

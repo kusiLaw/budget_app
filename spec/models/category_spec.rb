@@ -1,16 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe Category, type: :model do
-
   before :each do
-   @user = User.create(name: 'Peter', email: 'peter@gmail.com', password: '12345678', password_confirmation: '12345678')
-   @category = Category.new(name: 'Calls', icon: 'calls.svg')
-   @category.user = @user
+    @user = User.create(name: 'Peter', email: 'peter@gmail.com', password: '12345678',
+                        password_confirmation: '12345678')
+    @category = Category.new(name: 'Calls', icon: 'calls.svg')
+    @category.user = @user
   end
 
   context 'Validations:' do
     it 'Category with valid data' do
-     @category.save
+      @category.save
       expect(@category).to be_valid
     end
 
@@ -26,5 +26,4 @@ RSpec.describe Category, type: :model do
       expect(@category).to_not be_valid
     end
   end
-
 end
