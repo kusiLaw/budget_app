@@ -340,6 +340,10 @@ input[type="radio"]:checked + label {
   text-align: center;
 
 }
+
+.select-input{
+ font-size: larger;
+}
  @media screen and (min-width: 768px) {
   .cat-box-wrap,
   .user-form-wrapper{

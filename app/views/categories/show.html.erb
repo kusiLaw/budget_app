@@ -33,7 +33,7 @@
            <div class="individual_expenses_btn c-flex">
              <p> $ <%=item.amount%></p>
              <div class= "trans-btn flex">
-              <p><%= link_to "Edit", edit_expense_path(item), class:"button-link " %> |</p>
+              <%# <p><%= link_to "Edit", edit_expense_path(item), class:"button-link " %> 
               <p><%= button_to "Delete", item, method: :delete, class:"button-link del" %></p>
              </div>
            </div>
