@@ -3,11 +3,12 @@ class CategoriesController < ApplicationController
   
 
   def index
-    @categories = current_user.categories
+    @categories = current_user.categories.includes(:expenses)
+    @total = sum_toatal
   end
 
   def show
-     @transactions =  @category.expenses
+     @transactions =  @category.expenses.order(created_at: :desc)
   end
 
 
@@ -52,6 +53,15 @@ class CategoriesController < ApplicationController
 
   private
   
+    def sum_toatal
+      sum = 0
+
+      @categories.each do |i|
+       sum += i.expenses.sum(:amount)
+      end
+      sum
+    end
+
     def set_category
       @category = Category.find(params[:id])
     end
