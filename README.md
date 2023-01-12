@@ -91,7 +91,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link]( https://kusilaw.github.io/personal_blog/) comming soon
+- [Live Demo Link]( https://budgisee.onrender.com/) 
   
 - [Live Video Presentation Link]( https://www.loom.com/share/30ee108b25fa493db79e342b2ee9f8cd)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
