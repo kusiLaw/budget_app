@@ -5,7 +5,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Discuss Blog  ](#-discuss-blog--)
+- [📖 BudgiSEE   ](#-discuss-blog--)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -26,7 +26,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Discuss Blog  <a name="about-project"></a>
+# 📖 BudgiSEE   <a name="about-project"></a>
 
 > BudgiSEE is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
