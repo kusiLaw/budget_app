@@ -1,0 +1,24 @@
+<%= render 'share/nav', name: 'CATEGORIES', home: false%>
+<div class = "total-buget flex">
+  <h2 class="link-gray">Total Budget</h2>
+  <h2 class="link-gray">$ <%=@total%></h2>
+</div>
+<div class= "category-wrapper">
+  <p style="color: green"><%= notice %></p>
+
+  <div id="categories c-flex">
+    <% @categories.each do |category| %>
+     <div class="individual-cat flex">
+      <a href="<%= category_path(category) %>" class="cat-link flex">
+        <%= render category %>
+        <div class="cat">
+           <p>$ <%=category.expenses.sum(:amount)%></p>
+        </div>
+      </a>
+    </div>
+    <% end %>
+  </div>
+  <div class="add-cat-wrapper flex">
+    <%= link_to "New category", new_category_path, class: 'btn-blue add-cat' %>
+  </div>
+</div>

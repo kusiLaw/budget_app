@@ -1,0 +1,17 @@
+<%= render 'share/nav', name: 'WELCOME', home: true %>
+
+<div class="user-form-wrapper  c-flex">
+    <div class = "title c-flex">
+      <h2> BudgiSEE </h2>
+    </div>
+
+
+    <div class="c-flex">
+      <%if !user_signed_in?%>
+        <%= link_to 'LOG IN', user_session_path, class: 'signin' %>
+        <%= link_to 'SIGN UP', new_user_registration_path , class: 'signup' %>
+     <%else%>
+        <%= link_to 'VIEW CATEGORIES', categories_path, class: 'signin' %>
+     <%end%>
+    </div>
+</div>

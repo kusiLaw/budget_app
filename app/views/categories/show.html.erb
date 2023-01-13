@@ -1,0 +1,48 @@
+<%= render 'share/nav', name: 'TRANSACTIONS', home: false%>
+
+<div class="category_wrapper">
+   <div class="transaction_wrapper bline flex">
+     <div class="text-with-icon border flex">
+        <p class="cat-img flex">
+         <%=image_tag(@category.icon, alt:@category.icon, class: 'cat-icon')%>
+       </p>
+       <div class="cat-name c-flex">
+         <p class="cat-title "> <%= @category.name %></p>
+         <p class="cat_date"><%=@category.created_at %></p>
+       </div>
+     </div>
+     <div class="trans_details_summary c-flex">
+         <%# <div> %>
+            <p >$ <%= @transactions.sum(:amount)%></p>
+         <%# </div> %>
+
+         <div class= "trans-btn flex">
+            <%= link_to "Edit", edit_category_path(@category), class:"button-link " %> | 
+            <%= button_to "Delete", @category, method: :delete ,  class:"button-link del"%>
+         </div>
+     </div>
+   </div>
+
+   <div class="transactions_wrapper">
+      <% @transactions.each do |item| %>
+        <div class="transaction_list flex">
+           <div class="trans-name_date c-flex"> 
+             <p class=""><%=item.name%></p>
+             <p class="cat_date"><%=item.created_at%></p>
+           </div>
+           <div class="individual_expenses_btn c-flex">
+             <p> $ <%=item.amount%></p>
+             <div class= "trans-btn flex">
+              <%# <p><%= link_to "Edit", edit_expense_path(item), class:"button-link " %> 
+              <p><%= button_to "Delete", item, method: :delete, class:"button-link del" %></p>
+             </div>
+           </div>
+        </div>
+      <% end %>
+   </div>
+
+  <div class="new_trans flex">
+    <%= link_to "NEW TRANSACTION", new_expense_path , class:'signin link_btn_big'%>
+  </div>
+
+</div>

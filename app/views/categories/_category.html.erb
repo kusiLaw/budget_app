@@ -1,0 +1,9 @@
+<div id="<%= dom_id category %>" class="text-with-icon flex">
+  <p class="cat-img flex">
+    <%=image_tag(category.icon, alt:category.icon, class: 'cat-icon')%>
+  </p>
+  <div class="cat-name c-flex">
+    <p class="cat-title"> <%= category.name %></p>
+    <p class="cat_date"><%=category.created_at %></p>
+  </div>
+</div>
